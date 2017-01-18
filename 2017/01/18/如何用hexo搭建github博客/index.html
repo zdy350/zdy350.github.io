@@ -30,9 +30,9 @@ node如果以上没有的话，请自行搜索安装，注册
 安装hexo
 首先创建一个文件夹，比如”blogs”,用于存放hexo安装的内容
 在刚刚创建的文件夹（bl">
-<meta property="og:image" content="http://simlove.club/../../img/index.png">
-<meta property="og:image" content="http://simlove.club/../../img/new.png">
-<meta property="og:updated_time" content="2017-01-18T09:29:50.433Z">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/index.png">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/new.png">
+<meta property="og:updated_time" content="2017-01-18T10:00:07.931Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何用hexo搭建github博客">
 <meta name="twitter:description" content="真正用hexo搭建好了github博客，才发现原来如此简单。可是我却折腾了几天，~~(&amp;gt;_&amp;lt;)~~（智商捉急）！下面就总结一下这几天的折腾，自己踩的各种坑！windows环境
@@ -44,7 +44,7 @@ node如果以上没有的话，请自行搜索安装，注册
 安装hexo
 首先创建一个文件夹，比如”blogs”,用于存放hexo安装的内容
 在刚刚创建的文件夹（bl">
-<meta name="twitter:image" content="http://simlove.club/../../img/index.png">
+<meta name="twitter:image" content="http://ojyzkkjxm.bkt.clouddn.com/index.png">
   
     <link rel="alternative" href="/atom.xml" title="Emily&#39;s blogs" type="application/atom+xml">
   
@@ -213,11 +213,11 @@ node如果以上没有的话，请自行搜索安装，注册
 <h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><ol>
 <li>首先创建一个文件夹，比如”blogs”,用于存放hexo安装的内容</li>
 <li>在刚刚创建的文件夹（blogs），执行命令<br> npm install -g hexo<br>然后等待自动完成</li>
-<li>在blogs目录下执行操作<br> hexo init<br>等待完成，此时目录下会出现一些文件，如下图<br><img src="../../img/index.png" alt="目录"><br>好了，现在就全部安装完成！<br>我们可以生成静态页面<br> hexo generate(简写：hexo g)<br>启动本地服务<br> hexo server(简写：hexo s)<br>然后在浏览器输入<a href="http://localhost:4000即可了" target="_blank" rel="external">http://localhost:4000即可了</a></li>
+<li>在blogs目录下执行操作<br> hexo init<br>等待完成，此时目录下会出现一些文件，如下图<br><img src="http://ojyzkkjxm.bkt.clouddn.com/index.png" alt="目录"><br>好了，现在就全部安装完成！<br>我们可以生成静态页面<br> hexo generate(简写：hexo g)<br>启动本地服务<br> hexo server(简写：hexo s)<br>然后在浏览器输入<a href="http://localhost:4000即可了" target="_blank" rel="external">http://localhost:4000即可了</a></li>
 </ol>
 <p>是不是so easy！<br>接下来是重点了(踩坑之路)，也是最需要注意的了！</p>
 <h2 id="github-和-hexo配置"><a href="#github-和-hexo配置" class="headerlink" title="github 和 hexo配置"></a>github 和 hexo配置</h2><ol>
-<li>创建一个新的repository，建立与你用户名对应的仓库，如下图，这里很重要的一个点<br><strong>.github.io前面必须为你的用户名*</strong><br><img src="../../img/new.png" alt="new rep"></li>
+<li>创建一个新的repository，建立与你用户名对应的仓库，如下图，这里很重要的一个点<br><strong>.github.io前面必须为你的用户名*</strong><br><img src="http://ojyzkkjxm.bkt.clouddn.com/new.png" alt="new rep"></li>
 <li>打开blog目录下的_config.yml<br> 看最下面将deploy 改成下面的，这个是重点，其他都无所谓<br> <strong>deploy:<br>   type: git<br>   repo: <a href="https://github.com/zdy350/zdy350.github.io.git" target="_blank" rel="external">https://github.com/zdy350/zdy350.github.io.git</a><br>   branch: master</strong></li>
 </ol>
 <pre><code>一定要这样配置，其中repo 改成你的github 的rep（就是刚刚新创建的那个地址）
