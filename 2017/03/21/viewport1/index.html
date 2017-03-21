@@ -6,14 +6,42 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://simlove.club">
-  <title>Archives | Emily&#39;s blogs</title>
+  <title>视图的故事-第一部分 | Emily&#39;s blogs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Emily's blogs">
-<meta property="og:url" content="http://simlove.club/archives/index.html">
+  <meta name="description" content="这个是我翻译的文章，不到之处，请多多指教！原文：http://www.quirksmode.org/mobile/viewports.html
+在这个小系列中，我将解释视图以及多个重要元素的宽度是怎么工作的，例如html元素、也包括窗口、屏幕。 
+这篇文章是关于桌面浏览器的，唯一的目的是为移动端浏览器的类似讨论做铺垫。大部分网页开发者已经本能的了解大部分桌面概念。在手机端，我们将发现相同的概念，但">
+<meta property="og:type" content="article">
+<meta property="og:title" content="视图的故事-第一部分">
+<meta property="og:url" content="http://simlove.club/2017/03/21/viewport1/index.html">
 <meta property="og:site_name" content="Emily's blogs">
+<meta property="og:description" content="这个是我翻译的文章，不到之处，请多多指教！原文：http://www.quirksmode.org/mobile/viewports.html
+在这个小系列中，我将解释视图以及多个重要元素的宽度是怎么工作的，例如html元素、也包括窗口、屏幕。 
+这篇文章是关于桌面浏览器的，唯一的目的是为移动端浏览器的类似讨论做铺垫。大部分网页开发者已经本能的了解大部分桌面概念。在手机端，我们将发现相同的概念，但">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/css.png">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/cssb.png">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/csss.png">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/screenwidth.png">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/innerwidth.png">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/innerwidths.png">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/pageYoffset.png">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/pageYoffsetB.png">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/topright.png">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/viewportwidth.png">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/docw.png">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/clientWidth.png">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/clientwidths.png">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/offsetwidth.png">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/offsetwidths.png">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/eventpageX.png">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/mediaquery.png">
+<meta property="og:updated_time" content="2017-03-21T06:35:18.650Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Emily's blogs">
+<meta name="twitter:title" content="视图的故事-第一部分">
+<meta name="twitter:description" content="这个是我翻译的文章，不到之处，请多多指教！原文：http://www.quirksmode.org/mobile/viewports.html
+在这个小系列中，我将解释视图以及多个重要元素的宽度是怎么工作的，例如html元素、也包括窗口、屏幕。 
+这篇文章是关于桌面浏览器的，唯一的目的是为移动端浏览器的类似讨论做铺垫。大部分网页开发者已经本能的了解大部分桌面概念。在手机端，我们将发现相同的概念，但">
+<meta name="twitter:image" content="http://ojyzkkjxm.bkt.clouddn.com/css.png">
   
     <link rel="alternative" href="/atom.xml" title="Emily&#39;s blogs" type="application/atom+xml">
   
@@ -153,36 +181,144 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-viewport1" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/21/viewport1/" class="archive-article-date">
-  	<time datetime="2017-03-21T02:08:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-21</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/21/viewport1/">视图的故事-第一部分</a>
+    <h1 class="article-title" itemprop="name">
+      视图的故事-第一部分
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/03/21/viewport1/" class="archive-article-date">
+  	<time datetime="2017-03-21T02:08:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这个是我翻译的文章，不到之处，请多多指教！<br>原文：<a href="http://www.quirksmode.org/mobile/viewports.html" target="_blank" rel="external">http://www.quirksmode.org/mobile/viewports.html</a></p>
+<p><small>在这个小系列中，我将解释视图以及多个重要元素的宽度是怎么工作的，例如html元素、也包括窗口、屏幕。</small> </p>
+<p>这篇文章是关于桌面浏览器的，唯一的目的是为移动端浏览器的类似讨论做铺垫。大部分网页开发者已经本能的了解大部分桌面概念。在手机端，我们将发现相同的概念，但更复杂，基于对众所周知的东西进行讨论的前提，将会更好的帮助你理解移动端浏览器。<br><a id="more"></a></p>
+<h1 id="概念：设备像素和css像素"><a href="#概念：设备像素和css像素" class="headerlink" title="概念：设备像素和css像素"></a>概念：设备像素和css像素</h1><p>第一个概念你需要了解css像素和设备像素的区别。</p>
+<p>设备像素是一种我们本能认为是“靠谱”的像素。这些像素给出你正在使用的设备的正规的分辨率，通常可以从screen.width/height中读出来。</p>
+<p>如果你给出一个确定元素,width:128px，你的显示器是1024px宽，然后把你的屏幕浏览器放到最大，这个元素可以填充你的屏幕8次（粗略的算，现在我们要忽略那些其他复杂的部分）。</p>
+<p>然而如果用户缩放，这个计算就会发生改变。如果用户放大到200%，你的元素宽128px将只能4倍填充其1024宽屏。</p>
+<p>缩放在现代浏览器中相当于只是拉伸像素。即这个元素的宽度不是从128变到256，相反是实际像素变成2倍。真正意义上，元素仍然是128css像素，即使其占据了256个设备像素。</p>
+<p>换句话说，放大200%使得1个css像素占据了4倍设备像素（2倍宽，2倍高，总共4倍）。</p>
+<p>一些图片将会使概念变的清晰。下面是4像素在缩放为100%级别的情况下。Css像素和设备像素完全重叠，不多不少。<br><img src="http://ojyzkkjxm.bkt.clouddn.com/css.png" alt="设备像素和css像素重叠图片"></p>
+<p>现在我们缩小。Css像素开始收缩，意味着一个设备像素包含多个css像素。<br><img src="http://ojyzkkjxm.bkt.clouddn.com/cssb.png" alt="设备像素&gt;css像素"></p>
+<p>现在你放大，相反的事情发生了。Css像素开始变大，一个css像素包含多个物理设备像素。<br><img src="http://ojyzkkjxm.bkt.clouddn.com/csss.png" alt="设备像素&lt;css像素"></p>
+<p>这里的重点是你对css像素感兴趣。那些像素表示你的样式是如何渲染的。</p>
+<p>设备像素已经完全对你无用，对用户来说则不是；用户将会放大缩小页面直到他能舒服的阅读。然而缩放的级别对你不重要。浏览器会自动的判断你的css布局是伸展还是挤压。</p>
+<p>100%缩放<br>我开始举个示例，假设缩放是100%。是时候稍微严格定义：<br><strong> 在100%缩放下一个css像素准确的等同于一个设备像素。</strong></p>
+<p>100%缩放的概念对于下面的解释中很有用，但在你的日常工作中也不用太担心。在桌面端你通常是在100%缩放情况下测试你的网站，但即使用户放大缩小，神奇的css像素也会确保你的布局仍是原来的比例。</p>
+<h1 id="屏幕尺寸"><a href="#屏幕尺寸" class="headerlink" title="屏幕尺寸"></a>屏幕尺寸</h1><hr>
+<p>screen.width/height</p>
+<ul>
+<li>意味着用户的屏幕总大小</li>
+<li>以设备像素为单位计算</li>
+<li>在ie7和ie8模式下， css像素测量浏览器报错</li>
+</ul>
+<hr>
+<p>让我们看一些实际的测算。我们将以屏幕的宽高开始。他们包括用户屏幕的总宽高。他们的尺寸是用设备像素测算的因为他们从不改变：他们是显示屏的特点，而不是浏览器的。<br><img src="http://ojyzkkjxm.bkt.clouddn.com/screenwidth.png" alt="屏幕尺寸"></p>
+<p>有趣了！但是我们用这些信息干嘛呢？</p>
+<p>基本上没用。用户的显示屏大小对我们来说不重要，除非你想在网站统计数据库做测量用。</p>
+<h1 id="Window大小"><a href="#Window大小" class="headerlink" title="Window大小"></a>Window大小</h1><p>实际上，你想知道的是浏览器窗口的内部尺寸。这能准确的告诉你对于你的css布局用户有多大空间来有效使用。你可以通过window.innnerWidth 和 window.innerheight来得到这些尺寸。<br><img src="http://ojyzkkjxm.bkt.clouddn.com/innerwidth.png" alt="窗口图片"></p>
+<p>很显然，这个窗口内部宽度是用css像素测量的。你需要知道你的布局有多少能够放入浏览器窗口，以及缩小和放大的数量。所以如果用户放大，你就获得更少的窗口空间，同时window.innerWidth/Height将相应的减少。</p>
+<p>有个例外是opera浏览器，当用户放大时window.innerWidth/Height不会减少（<strong> 据我今天测试，这个情况不会发生，不是个例外，但还是依据原文翻译了</strong> ）：他们是以设备像素来计算。在桌面端是令人烦恼的，但在移动端会致命，我们稍后看</p>
+<p><img src="http://ojyzkkjxm.bkt.clouddn.com/innerwidths.png" alt="网页缩放窗口大小"></p>
+<p>注意计算的宽高包括滚动条的。他们也被当做内部窗口的一部分。（这是历史遗留原因。）</p>
+<h1 id="滚动偏移"><a href="#滚动偏移" class="headerlink" title="滚动偏移"></a>滚动偏移</h1><p>Window.pageXOffset ,window.pageYOffset 是水平滚动条，垂直滚动条相当于文档的偏移。因此你可以知道用户滚动了多少。<br><img src="http://ojyzkkjxm.bkt.clouddn.com/pageYoffset.png" alt="scroll offset"></p>
+<p>这些属性也是用css像素计算的。你想要知道文档被滚动了多少，而不管缩放级别是什么。</p>
+<p>理论上，如果用户向上滚动然后放大，window.pageX/YOffset 将会改变。然而当用户放大时，浏览器通过在页面可视区域顶部保持同样的元素来保持网页一致性。通常工作时不是那么完美，但意味着在实际上window.pageX/YOffset不会改变：超出窗口的css像素仍然是一样的。</p>
+<p><img src="http://ojyzkkjxm.bkt.clouddn.com/pageYoffsetB.png" alt="页面放大滚动偏移"></p>
+<h1 id="概念：视图"><a href="#概念：视图" class="headerlink" title="概念：视图"></a>概念：视图</h1><p>在我们介绍更多js属性之前，我们要介绍另一个概念：视图。<br>视图的功能是约束html元素，是你网站最主要的包含块。</p>
+<p>这听上去有点模糊，这里有个实例。假设你现在有个流布局，你的侧边栏宽度为10%。现在你调整浏览器窗口尺寸，侧栏会相应的伸缩。但准确来说那是怎样工作的呢？</p>
+<p>从技术上说是侧栏从父级继承10%的宽度，我们称为body（并且你没有给定它宽度）。现在的问题变为body有谁的宽度。</p>
+<p>通常，块级元素继承父级的100%宽度（也特例，但现在我们忽略）。所以body的宽和父级一样，即html元素。</p>
+<p>Html元素是多宽呢？他是和浏览器窗口一样宽，为什么。这就是为什么侧栏10%将占整个浏览器窗口的10%。所有的网页开发者自然而然都知道并运用事实。</p>
+<p>你可能不知道理论上是如何工作的。理论上，html元素的宽度是被视图的宽度约束的。Html元素是100%的视图宽度。</p>
+<p>视图依次又是准确等同于浏览器窗口的：他是这样被定义的，视图不是html结构，所以你不能通过css改变它。在桌面浏览器中，它仅是浏览器的宽度和高度。在移动端它则更加复杂。</p>
+<h1 id="推论"><a href="#推论" class="headerlink" title="推论"></a>推论</h1><p>这些陈述有些奇怪的结论。你可以看这个网站的右边，把滚动条一直向上拉到最顶部，放大2或3个级别，所以网站的内容将从浏览器窗口溢出。</p>
+<p>现在把滚动条向右拖，你可以看到网站上顶部蓝色的条不再正好排成一行。<br><img src="http://ojyzkkjxm.bkt.clouddn.com/topright.png" alt="topright"></p>
+<p>这个行为对视图是怎样定义的起着至关重要的作用。我给顶部蓝色条定义宽度100%。什么的100%呢？是html元素的，即视图的宽度，浏览器的宽度。</p>
+<p>关键点在：当缩放是100%时是正常的，现在我们放大，视图变得小了相比网站宽度。在它自己无关紧要，内容将溢出html元素，但其元素有overflow:visible，就意味着不管怎样溢出内容会被展示。</p>
+<p>但这蓝色条没有溢出。我给他定义了宽度100%，然后，浏览器遵从视图给的宽度。他们不在乎那些宽度现在太窄。</p>
+<p><img src="http://ojyzkkjxm.bkt.clouddn.com/viewportwidth.png" alt="viewport"></p>
+<h1 id="文档宽度？"><a href="#文档宽度？" class="headerlink" title="文档宽度？"></a>文档宽度？</h1><p>我真正需要知道的是网页整个内容的宽度是多少，包括伸出来的。目前为止据我所知找到那个值是不可能的（说的委婉些，除非你能一个个计算页面上所有元素的宽和边距，但这是极易出错的）。</p>
+<p>我开始相信我们需要给出一个js属性对，我将称之为“文档宽度“（显然是用css像素）。<br><img src="http://ojyzkkjxm.bkt.clouddn.com/docw.png" alt="document width"></p>
+<p>如果我们真的感觉不好，为什么不把他用css来显示？我想我可以设置我的宽度是依赖于文档的，而不是html元素的（这必定很棘手，纵然如果不能实现我也不感到惊讶。）</p>
+<p>浏览器厂商们，你们觉得呢？</p>
+<h1 id="测量视图"><a href="#测量视图" class="headerlink" title="测量视图"></a>测量视图</h1><p>你可能想知道视图的尺寸,可以通过document.documentElement.clientWidth and –Height来得到。<br><img src="http://ojyzkkjxm.bkt.clouddn.com/clientWidth.png" alt="视图尺寸"></p>
+<p>如果你知道dom，你知道document.documentElement 实际上  就是html元素：任何html文档的根元素。然而视图是更高一级，打个比方；就是元素包含html元素。如果你给html元素一个宽度可能就有用了（我没有介绍，但它是可能实现的）。</p>
+<p>在那种情况下，document.documentElement.clientWidth and -Height 依然给出的是视图的尺寸，而不是html元素（这是一个特殊的规则只对这个特性这个元素。在其他情况下，元素的实际宽度是有用的）。<br><img src="http://ojyzkkjxm.bkt.clouddn.com/clientwidths.png" alt="viewport"></p>
+<p>所以document.documentElement.clientWidth and  –Height 通常给出的是视图尺寸，而不管html元素。</p>
+<h1 id="两个属性对"><a href="#两个属性对" class="headerlink" title="两个属性对"></a>两个属性对</h1><p>但视图的尺寸难道不是通过window.innerWidth/Height给出的吗？是还是不是。</p>
+<p>这两个特性是有形式上的区别。document.documentElement.clientWidth and -Height 不包括滚动条，而 window.innerWidth/Height 包括。虽然这有点吹毛求疵。</p>
+<p>实际上我们有这两个特性是浏览器大战时遗留的。以前Netscape只支持window.innerWidth/Height 而IE只有document.documentElement.clientWidth and –Height。从那时起其他浏览器开始支持clientWidth/Height, 但IE还是没有支持window.innerWidth/Height。</p>
+<p>有这两个属性对对桌面端来说是个小麻烦，但据我们所见在移动端倒变为一个福音。</p>
+<h1 id="测量html元素"><a href="#测量html元素" class="headerlink" title="测量html元素"></a>测量html元素</h1><p>所以clientWidth/Heiht 在各个情况下都能给出视图尺寸。但我们能否找到html元素自身的尺寸呢？他们存在document.documentElement.offsetWidht/Heiht。<br><img src="http://ojyzkkjxm.bkt.clouddn.com/offsetwidth.png" alt="doc"></p>
+<p>这些属性真正让你获取html元素作为一个块级元素；如果你设置width，offsetWidth将会体现出来。(<strong> 这里比较难翻译，不知道是否准确 </strong>)<br><img src="http://ojyzkkjxm.bkt.clouddn.com/offsetwidths.png" alt=""></p>
+<h1 id="坐标事件"><a href="#坐标事件" class="headerlink" title="坐标事件"></a>坐标事件</h1><p>接下来是坐标事件。当一个鼠标事件发生，至少5对特性将会给你事件的准确网站。下面3个对我们的讨论至关重要：</p>
+<hr>
+<ul>
+<li>pageX/Y 将用css像素给出相对于html元素的坐标</li>
+<li>clientX/Y将用css像素给出相对于视图的坐标</li>
+<li>screenX/Y将以设备像素给出相对于屏幕的坐标</li>
+</ul>
+<hr>
+<p>pageX/Y clientX/Y screenX/Y<br><img src="http://ojyzkkjxm.bkt.clouddn.com/eventpageX.png" alt="pagex"></p>
+<p>90%的情况下你会用pageX/Y;通常你想知道这个事件相对于文档的位置。剩下的10%你会用到clienX/Y。你从不需要这个事件相对于屏幕的坐标。</p>
+<h1 id="媒体查询"><a href="#媒体查询" class="headerlink" title="媒体查询"></a>媒体查询</h1><p>最后，我们说几句关于媒体查询。这个想法很简单：你可以定义特殊的css规则在大于、小于、等于页面固定大小下执行。示例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">div.sidebar &#123;</div><div class="line">    width: 300px;</div><div class="line">&#125;</div><div class="line">@media all and (max-width: 400px) &#123;</div><div class="line">    div.sidebar &#123;</div><div class="line">        width: 100px;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>现在宽度小于400px时，侧栏是300px，在其他情况下是100PX。</p>
+<p>问题自然是：这里我们测量那个宽度呢？</p>
+<h2 id="这里有两个相关的媒体查询：width-height-and-device-width-device-height。"><a href="#这里有两个相关的媒体查询：width-height-and-device-width-device-height。" class="headerlink" title="这里有两个相关的媒体查询：width/height and device-width/device-height。"></a>这里有两个相关的媒体查询：width/height and device-width/device-height。</h2><ul>
+<li>width/height 用的是和documentElement.clientWidht/Height（换句话说就是视图）同一个值。是用css像素表示。</li>
+<li>device-width/height 用的是和screen.width/height（即屏幕）同一个值。它是用设备像素来表示。</li>
+</ul>
+<hr>
+<p><img src="http://ojyzkkjxm.bkt.clouddn.com/mediaquery.png" alt="media"></p>
+<p>那你用哪个呢？自然很明显 width。网页开发者对设备像素不敢兴趣；起作用的是浏览器窗口。<br>所以用width，忘记device-width，在桌面应用。我们都知道移动端的情况更麻烦。</p>
+<h1 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h1><p>这个是我们从桌面浏览器行为推断的结论。这个系列的第二部分是关于移动端的概念和桌面有一些重要的不同。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>1分也是爱哦\(^o^)/~<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://ojyzkkjxm.bkt.clouddn.com/weixinpay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -194,134 +330,107 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://simlove.club/2017/03/21/viewport1/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/01/18/how-to-build-blog-by-hexo/" class="archive-article-date">
-  	<time datetime="2017-01-18T06:07:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-18</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/01/18/how-to-build-blog-by-hexo/">如何用hexo搭建github博客</a>
-    </h1>
+  
+    <a href="/2017/01/18/how-to-build-blog-by-hexo/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">如何用hexo搭建github博客</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	 <div class="ds-thread" data-thread-key="post-viewport1" data-title="视图的故事-第一部分" data-url="http://simlove.club/2017/03/21/viewport1/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'undefined'};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">blog</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/01/17/the-first-para/" class="archive-article-date">
-  	<time datetime="2017-01-17T03:03:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/01/17/the-first-para/">the first para</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">blog</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">fisrt</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/01/17/hello-world/" class="archive-article-date">
-  	<time datetime="2017-01-17T01:35:13.973Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/01/17/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -344,8 +453,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
