@@ -6,14 +6,26 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://simlove.club">
-  <title>Archives | Emily&#39;s blogs</title>
+  <title>css3的单边阴影 | Emily&#39;s blogs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Emily's blogs">
-<meta property="og:url" content="http://simlove.club/archives/index.html">
+  <meta name="description" content="今天用css3做一个底部阴影，发现结果左右两边有阴影效果，就开始各种调试，修改参数，心塞，还是没有效果…图片效果如下1&amp;lt;div class=&quot;bottom&quot;&amp;gt;bottom&amp;lt;/div&amp;gt;
+1234567.bottom &amp;#123;  width: 100px;  height: 100px;  margin: 50px;  border: 1px solid #ccc;  bo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css3的单边阴影">
+<meta property="og:url" content="http://simlove.club/2017/07/06/css3的单边阴影/index.html">
 <meta property="og:site_name" content="Emily's blogs">
+<meta property="og:description" content="今天用css3做一个底部阴影，发现结果左右两边有阴影效果，就开始各种调试，修改参数，心塞，还是没有效果…图片效果如下1&amp;lt;div class=&quot;bottom&quot;&amp;gt;bottom&amp;lt;/div&amp;gt;
+1234567.bottom &amp;#123;  width: 100px;  height: 100px;  margin: 50px;  border: 1px solid #ccc;  bo">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/1499330694%281%29.jpg">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/%E6%97%A0spread.jpg">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/%E6%9C%89spread.jpg">
+<meta property="og:image" content="http://ojyzkkjxm.bkt.clouddn.com/%E5%BA%95%E9%83%A8%E5%8D%95%E8%BE%B9%E9%98%B4%E5%BD%B1.jpg">
+<meta property="og:updated_time" content="2017-07-06T09:41:59.312Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Emily's blogs">
+<meta name="twitter:title" content="css3的单边阴影">
+<meta name="twitter:description" content="今天用css3做一个底部阴影，发现结果左右两边有阴影效果，就开始各种调试，修改参数，心塞，还是没有效果…图片效果如下1&amp;lt;div class=&quot;bottom&quot;&amp;gt;bottom&amp;lt;/div&amp;gt;
+1234567.bottom &amp;#123;  width: 100px;  height: 100px;  margin: 50px;  border: 1px solid #ccc;  bo">
+<meta name="twitter:image" content="http://ojyzkkjxm.bkt.clouddn.com/1499330694%281%29.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Emily&#39;s blogs" type="application/atom+xml">
   
@@ -153,36 +165,72 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="[layout]-css3的单边阴影" class="article article-type-[layout] " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-[layout]">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/06/css3的单边阴影/" class="archive-article-date">
-  	<time datetime="2017-07-06T08:21:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-06</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/06/css3的单边阴影/">css3的单边阴影</a>
+    <h1 class="article-title" itemprop="name">
+      css3的单边阴影
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/07/06/css3的单边阴影/" class="archive-article-date">
+  	<time datetime="2017-07-06T08:21:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天用css3做一个底部阴影，发现结果左右两边有阴影效果，就开始各种调试，修改参数，心塞，还是没有效果…<br>图片效果如下<br><img src="http://ojyzkkjxm.bkt.clouddn.com/1499330694%281%29.jpg" alt="设备像素和css像素重叠图片"><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;div class=<span class="string">"bottom"</span>&gt;bottom&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">.bottom &#123;</div><div class="line">  width: 100px;</div><div class="line">  height: 100px;</div><div class="line">  margin: 50px;</div><div class="line">  border: 1px solid <span class="comment">#ccc;</span></div><div class="line">  box-shadow: 0 10px 10px <span class="comment">#f60;</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>然后各种搜索，发现了一个重点，box-shadow有<strong>6</strong>个参数‘box-shadow:inset x-offset y-offset blur-radius spread-radius color，而我们大部分用的5个，其中的<font color="#ff0">spread-radius</font>被我们无情的忽略了。</p>
+<p>接下来，我们来看一下，这个属性到底有什么影响呢？<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">box-shadow: 0 0 5px red;</div></pre></td></tr></table></figure></p>
+<p><img src="http://ojyzkkjxm.bkt.clouddn.com/%E6%97%A0spread.jpg" alt="无spread-radius效果图片"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">box-shadow: 0 0 5px 5px red;</div></pre></td></tr></table></figure>
+<p><img src="http://ojyzkkjxm.bkt.clouddn.com/%E6%9C%89spread.jpg" alt="有spread-radius效果图片"></p>
+<p>下面我们来看设置底部阴影，如何去除左右边框的阴影<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.bottom &#123;</div><div class="line">  box-shadow: 0 10px 10px -5px <span class="comment">#f60;</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>效果图如下，<br><img src="http://ojyzkkjxm.bkt.clouddn.com/%E5%BA%95%E9%83%A8%E5%8D%95%E8%BE%B9%E9%98%B4%E5%BD%B1.jpg" alt="底部单边阴影"></p>
+<p>现在左右两边再无阴影了！O(∩_∩)O</p>
+<p><strong><br>最后解释一下“spread”改变阴影的大小——其值可以是正负值，如果值为正，则整个阴影都延展扩大，反之值为负值是，则缩小。</strong></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>1分也是爱哦\(^o^)/~<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="http://ojyzkkjxm.bkt.clouddn.com/weixinpay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -206,172 +254,107 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://simlove.club/2017/07/06/css3的单边阴影/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/21/viewport1/" class="archive-article-date">
-  	<time datetime="2017-03-21T02:08:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-21</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/21/viewport1/">视图的故事-第一部分</a>
-    </h1>
+  
+    <a href="/2017/03/21/viewport1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">视图的故事-第一部分</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	 <div class="ds-thread" data-thread-key="[layout]-css3的单边阴影" data-title="css3的单边阴影" data-url="http://simlove.club/2017/07/06/css3的单边阴影/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'undefined'};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">viewport, layout, css、device pixels</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/01/18/how-to-build-blog-by-hexo/" class="archive-article-date">
-  	<time datetime="2017-01-18T06:07:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-18</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/01/18/how-to-build-blog-by-hexo/">如何用hexo搭建github博客</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">blog</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/01/17/the-first-para/" class="archive-article-date">
-  	<time datetime="2017-01-17T03:03:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/01/17/the-first-para/">the first para</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">blog</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">fisrt</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/01/17/hello-world/" class="archive-article-date">
-  	<time datetime="2017-01-17T01:35:13.973Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/01/17/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -394,8 +377,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
